@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/json-server.js": {
-      "includeFiles": "db.json"
-    }
-  }
-}
