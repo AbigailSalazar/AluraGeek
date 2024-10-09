@@ -27,7 +27,26 @@ async function addProduct(name, price, img) {
   return result;
 }
 
+async function deleteProduct(id) {
+  const response = await fetch(`${urlService}/${id}`, {
+    method: "DELETE",
+  });
+
+  if (response.status === 404) {
+    throw new Error(`Producto con id ${id} no existe`);
+  }
+
+  if (!response.ok) {
+    const errorMessage = await response.text();
+    console.log(errorMessage);
+    throw new Error("No se pudo eliminar el producto");
+  }
+
+  return true;
+}
+
 export const productsAPI = {
   getProducts,
   addProduct,
+  deleteProduct,
 };

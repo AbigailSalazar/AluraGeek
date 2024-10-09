@@ -7,27 +7,16 @@
       "imagen": "assets/test_image.svg"
     },
     {
+      "id": "1",
       "nombre": "Dr.Stone",
       "precio": 20,
       "imagen": "https://i.pinimg.com/564x/18/49/b2/1849b22c562658c647e89705788e2ff8.jpg"
-    },
-    {
-      "id": "6e38",
-      "nombre": "Haiykuu",
-      "precio": "200",
-      "imagen": "https://i.pinimg.com/enabled_hi/564x/82/b1/91/82b191a918569a4a1614c8385d2dc06e.jpg"
     },
     {
       "id": "d4f2",
       "nombre": "Hunter x Hunter",
       "precio": "200",
       "imagen": "https://i.pinimg.com/564x/fc/a7/c8/fca7c8a969bdf6777d30efd078701252.jpg"
-    },
-    {
-      "id": "75c6",
-      "nombre": "Toy Story",
-      "precio": "3000",
-      "imagen": "https://i.pinimg.com/564x/78/7b/4a/787b4a4afc221ba753414428f17ddc1b.jpg"
     }
   ]
 }
