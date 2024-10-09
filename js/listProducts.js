@@ -1,5 +1,9 @@
 import { productsAPI } from "./productsService.js";
 
+const inputName = document.querySelector("[data-name]");
+const inputPrice = document.querySelector("[data-price]");
+const inputImg = document.querySelector("[data-img]");
+
 listProducts();
 
 async function listProducts() {
@@ -37,6 +41,17 @@ export function createProductCard(product) {
   // Add delete event
   const deleteButton = article.querySelector(".product__delete");
   deleteButton.addEventListener("click", () => deleteProduct(product.id, article));
+  article.addEventListener("click", () => editProduct(product));
+}
+
+function editProduct(product) {
+  const form_title = document.getElementById("products-add_title");
+  const form = document.getElementById("products-add-form");
+  form_title.innerText = "EDITAR PRODUCTO";
+  form.setAttribute("data-id", product.id);
+  inputName.value = product.nombre;
+  inputPrice.value = product.precio;
+  inputImg.value = product.imagen;
 }
 
 async function deleteProduct(id, card) {

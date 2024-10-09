@@ -6,6 +6,7 @@
     <title>Alura Geek</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="/js/productsService.js"></script>
+    <link rel="shortcut icon" href="/assets/heart.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
         <div class="products__container"></div>
       </section>
       <section class="products-add">
-        <h2>AGREGAR PRODUCTO:</h2>
+        <h2 id="products-add_title">AGREGAR PRODUCTO:</h2>
         <form id="products-add-form">
           <input type="text" name="nombre" placeholder="Nombre" data-name required />
           <input type="number" name="precio" min="0" placeholder="Precio" data-price required />
