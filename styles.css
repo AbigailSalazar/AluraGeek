@@ -79,7 +79,7 @@ h2 {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow-y: scroll;
   padding: 0em 1em 0em 1em;

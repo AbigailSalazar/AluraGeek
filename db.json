@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "nombre": "Test",
+      "precio": "0",
+      "imagen": "/assets/test_image.svg",
+      "id": 0
+    },
+    {
+      "nombre": "Test",
+      "precio": "0",
+      "imagen": "/assets/test_image.svg",
+      "id": 0
+    },
+    {
+      "nombre": "Test",
+      "precio": "0",
+      "imagen": "/assets/test_image.svg",
+      "id": 0
+    },
+    {
+      "nombre": "Test",
+      "precio": "0",
+      "imagen": "/assets/test_image.svg",
+      "id": 0
+    },
+    {
+      "nombre": "Test",
+      "precio": "0",
+      "imagen": "/assets/test_image.svg",
+      "id": 0
+    },
+    {
+      "nombre": "Hunter x hunter",
+      "precio": "300",
+      "imagen": "https://i.pinimg.com/enabled_hi/564x/eb/33/e3/eb33e375e90ff6abfc2d2c21d7b26bff.jpg"
+    },
+    {
+      "nombre": "Hunter x hunter",
+      "precio": "300",
+      "imagen": " https://i.pinimg.com/564x/53/27/5d/53275d5d8ce90c300b3265f84c2d306d.jpg"
+    }
+  ]
+}
