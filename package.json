@@ -4,6 +4,7 @@
   "description": "Front-end for products management",
   "main": "index.js",
   "scripts": {
+    "dev": "json-server --watch db.json --port 3000",
     "start": "node api/json-server.js"
   },
   "author": "Andrea Salazar",
