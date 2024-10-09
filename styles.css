@@ -156,6 +156,7 @@ input::placeholder {
 
 input:focus {
   outline: none;
+  border-color: var(--secundary-color);
 }
 
 .buttons__container {
