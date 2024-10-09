@@ -20,13 +20,13 @@
       </section>
       <section class="products-add">
         <h2>AGREGAR PRODUCTO:</h2>
-        <form>
-          <input type="text" name="nombre" placeholder="Nombre" />
-          <input type="number" name="precio" min="0" placeholder="Precio" />
-          <input type="url" name="imagen" placeholder="Imágen" />
+        <form id="products-add-form">
+          <input type="text" name="nombre" placeholder="Nombre" data-name required />
+          <input type="number" name="precio" min="0" placeholder="Precio" data-price required />
+          <input type="url" name="imagen" placeholder="Imágen" data-img required />
           <div class="buttons__container">
-            <button class="button__send">Enviar</button>
-            <button class="button__clean">Limpiar</button>
+            <input id="btn-send" class="button__send" type="submit" value="Enviar" />
+            <button id="btn-clean" class="button__clean" type="reset">Limpiar</button>
           </div>
         </form>
       </section>
@@ -41,6 +41,7 @@
       <p class="footer__credits">DESARROLLADO POR ANDREA SALAZAR</p>
       <p class="footer_details">ALURA LATAM - 2024</p>
     </footer>
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/listProducts.js"></script>
+    <script type="module" src="/js/addProducts.js"></script>
   </body>
 </html>

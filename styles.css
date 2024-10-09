@@ -163,12 +163,14 @@ input:focus {
   gap: 0.5em;
 }
 
-button {
+button,
+input[type="submit"] {
   border-radius: 30px;
   padding: 15px;
   font-family: var(--main-font);
   font-size: 1.2em;
   cursor: pointer;
+  border: none;
 }
 
 .button__send {
@@ -236,9 +238,7 @@ footer {
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) transparent;
-  scrollbar-arrow-color: transparent;
   scroll-behavior: smooth;
-  scrollbar-track-color: transparent;
 }
 
 @media (max-width: 768px) {
