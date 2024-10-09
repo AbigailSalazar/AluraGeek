@@ -1,4 +1,4 @@
-const urlService = "http://localhost:3001/productos";
+const urlService = "https://alura-geek-api-theta.vercel.app/";
 
 async function getProducts() {
   const conexion = await fetch(urlService);
