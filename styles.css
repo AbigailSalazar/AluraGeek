@@ -52,7 +52,6 @@ footer {
 
 main {
   display: flex;
-  gap: 4em;
   padding: 2em;
   font-family: var(--main-font);
   background-color: var(--tertiary-color);
@@ -69,9 +68,10 @@ h2 {
   flex-direction: column;
   width: 50%;
   height: 50vh;
-  padding: 2em;
+  padding: 2em 0 2em 0;
   gap: 2em;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .products__container {
@@ -80,8 +80,9 @@ h2 {
   gap: 1em;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   overflow-y: scroll;
-  padding: 1em;
+  padding: 0em 1em 0em 1em;
 }
 .products__item {
   display: flex;
@@ -110,13 +111,15 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 2em;
+  padding: 2em 0 2em 0;
   align-items: center;
   gap: 2em;
+  margin-bottom: 2em;
 }
 
 .product__img {
   width: 100%;
+  height: 70%;
 }
 
 .product__delete {
@@ -131,7 +134,7 @@ form {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 1.5em;
 }
 
 input {
@@ -231,4 +234,39 @@ html {
   scrollbar-arrow-color: transparent;
   scroll-behavior: smooth;
   scrollbar-track-color: transparent;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-flow: column-reverse;
+  }
+  .products {
+    width: 100%;
+    height: 70vh;
+  }
+  .products-add {
+    width: 100%;
+  }
+  .products__container {
+    flex-direction: column;
+    overflow-x: scroll;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    max-height: 100%;
+    width: 100%;
+  }
+  .products__item {
+    width: 35%;
+    height: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .buttons__container {
+    flex-direction: column;
+  }
+  .button__clean,
+  .button__send {
+    width: 100%;
+  }
 }
