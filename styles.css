@@ -25,7 +25,7 @@ section {
 
 :root {
   --primary-color: #5300c8;
-  --secundary-color: #8e4ee7;
+  --secundary-color: #cc8282;
   --tertiary-color: #f8f8f8;
   --main-font-color: #2c2733;
   --logo-font: "VT323", monospace;
@@ -124,6 +124,7 @@ h2 {
   max-width: 200px;
   align-self: center;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .product__delete {
