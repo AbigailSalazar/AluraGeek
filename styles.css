@@ -59,7 +59,7 @@ main {
 
 h2 {
   font-family: var(--logo-font);
-  color: var(--main-font-color);
+  color: var(--primary-color);
   font-size: 2em;
   font-weight: 600;
 }
