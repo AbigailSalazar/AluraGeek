@@ -25,7 +25,7 @@ section {
 
 :root {
   --primary-color: #5300c8;
-  --secundary-color: #c93a3a;
+  --secundary-color: #8e4ee7;
   --tertiary-color: #f8f8f8;
   --main-font-color: #2c2733;
   --logo-font: "VT323", monospace;
@@ -99,7 +99,7 @@ h2 {
 }
 
 .products__item:hover {
-  border-color: var(--secundary-color);
+  background-color: var(--secundary-color);
 }
 
 .products__item-row {
