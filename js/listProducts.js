@@ -52,6 +52,11 @@ function editProduct(product) {
   inputName.value = product.nombre;
   inputPrice.value = product.precio;
   inputImg.value = product.imagen;
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 async function deleteProduct(id, card) {
