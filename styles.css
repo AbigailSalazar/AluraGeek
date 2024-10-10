@@ -87,7 +87,7 @@ h2 {
 .products__item {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
+  background-color: var(--secundary-color);
   color: var(--tertiary-color);
   width: calc(25% - 1em);
   padding: 1em;
