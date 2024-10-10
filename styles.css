@@ -87,7 +87,7 @@ h2 {
 .products__item {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-colorcolor);
+  background-color: var(--primary-color);
   color: var(--tertiary-color);
   width: calc(25% - 1em);
   padding: 1em;
@@ -127,7 +127,7 @@ h2 {
 }
 
 .product__delete {
-  fill: var(--primary-color);
+  fill: var(--tertiary-color);
 }
 
 .product__delete:hover {
