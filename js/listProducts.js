@@ -38,6 +38,7 @@ export function createProductCard(product) {
     </div>`;
 
   productsContainer.prepend(article);
+  productsContainer.scrollTo(0, 0);
 
   // Add delete event
   const deleteButton = article.querySelector(".product__delete");
