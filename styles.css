@@ -101,6 +101,7 @@ h2 {
 .products__item:hover {
   background-color: var(--primary-color);
   color: var(--tertiary-color);
+  transition: 0.4s background-color;
 }
 
 .products__item-row {
@@ -162,6 +163,7 @@ input::placeholder {
 input:focus {
   outline: none;
   border-color: var(--secundary-color);
+  transition: 0.2s border-color;
 }
 
 .buttons__container {
@@ -187,6 +189,7 @@ input[type="submit"] {
 
 .button__send:hover {
   background-color: var(--secundary-color);
+  transition: 0.2s background-color;
 }
 
 .button__clean {
@@ -197,6 +200,7 @@ input[type="submit"] {
 
 .button__clean:hover {
   border-color: var(--secundary-color);
+  transition: 0.2s border-color;
 }
 
 footer {
