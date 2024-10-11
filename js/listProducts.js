@@ -3,6 +3,7 @@ import { productsAPI } from "./productsService.js";
 const inputName = document.querySelector("[data-name]");
 const inputPrice = document.querySelector("[data-price]");
 const inputImg = document.querySelector("[data-img]");
+const message = document.querySelector(".products-add__message");
 
 listProducts();
 
@@ -61,11 +62,20 @@ function editProduct(product) {
 
 async function deleteProduct(id, card) {
   try {
-    const result = productsAPI.deleteProduct(id);
+    const result = await productsAPI.deleteProduct(id);
     if (result) {
+      mostrarMensaje("✅ Producto eliminado correctamente :)");
       card.remove();
     }
   } catch (error) {
-    alert(error.message);
+    mostrarMensaje(`❌ Error: ${error.message}`);
   }
+}
+
+function mostrarMensaje(mensaje) {
+  message.textContent = mensaje;
+  message.classList.add("show");
+  setTimeout(() => {
+    message.classList.remove("show");
+  }, 3000);
 }

@@ -1,6 +1,7 @@
 import { createProductCard } from "./listProducts.js";
 import { productsAPI } from "./productsService.js";
 
+const message = document.querySelector(".products-add__message");
 const inputName = document.querySelector("[data-name]");
 const inputPrice = document.querySelector("[data-price]");
 const inputImg = document.querySelector("[data-img]");
@@ -28,11 +29,12 @@ async function addProduct(e) {
   try {
     const product = await productsAPI.addProduct(inputName.value, inputPrice.value, inputImg.value);
     if (product) {
+      mostrarMensaje(" ✅ Producto agregado correctamente :)");
       clean();
       createProductCard(product);
     }
   } catch (error) {
-    alert(error.message);
+    mostrarMensaje(`❌ Error: ${error.message}`);
   }
 }
 
@@ -41,6 +43,7 @@ async function sendEditProduct(e, id) {
   try {
     const product = await productsAPI.editProduct(id, inputName.value, inputPrice.value, inputImg.value);
     if (product) {
+      mostrarMensaje(" ✅ Producto editado correctamente :)");
       clean();
       const oldProduct = document.getElementById(product.id);
       oldProduct.remove();
@@ -48,7 +51,7 @@ async function sendEditProduct(e, id) {
       form.setAttribute("data-id", "");
     }
   } catch (error) {
-    alert(error.message);
+    mostrarMensaje(`❌ Error: ${error.message}`);
   }
 }
 
@@ -56,4 +59,12 @@ function clean() {
   inputName.value = "";
   inputImg.value = "";
   inputPrice.value = "";
+}
+
+function mostrarMensaje(mensaje) {
+  message.textContent = mensaje;
+  message.classList.add("show");
+  setTimeout(() => {
+    message.classList.remove("show");
+  }, 3000);
 }

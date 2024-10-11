@@ -203,6 +203,33 @@ input[type="submit"] {
   transition: 0.2s border-color;
 }
 
+.products-add__message {
+  font-family: var(--logo-font);
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0em 2em;
+  opacity: 0;
+}
+
+.products-add__message.show {
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
