@@ -69,7 +69,7 @@ h2 {
   width: 50%;
   height: 50vh;
   padding: 2em 0;
-  gap: 2em;
+  gap: 1em;
   align-items: center;
   margin-bottom: 2em;
 }
@@ -81,7 +81,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   overflow-y: scroll;
-  padding: 0 1em;
+  padding: 1em 1em;
 }
 
 .products__item {
@@ -129,11 +129,15 @@ h2 {
 }
 
 .product__delete {
-  fill: var(--tertiary-color);
+  fill: var(--primary-color);
 }
 
 .product__delete:hover {
   fill: var(--secundary-color);
+}
+
+.products__item:hover .product__delete {
+  fill: var(--tertiary-color);
 }
 
 form {
