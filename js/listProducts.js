@@ -36,7 +36,7 @@ export function createProductCard(product) {
       </svg>
     </div>`;
 
-  productsContainer.appendChild(article);
+  productsContainer.prepend(article);
 
   // Add delete event
   const deleteButton = article.querySelector(".product__delete");

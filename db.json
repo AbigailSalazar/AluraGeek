@@ -14,7 +14,7 @@
     },
     {
       "nombre": "Hunter x Hunter",
-      "precio": "500",
+      "precio": "750",
       "imagen": "https://i.pinimg.com/564x/fc/a7/c8/fca7c8a969bdf6777d30efd078701252.jpg",
       "id": "d4f2"
     },
@@ -25,10 +25,10 @@
       "imagen": "https://i.pinimg.com/564x/38/d8/1e/38d81e93e0e13e8a0f4e879c6569c6e9.jpg"
     },
     {
-      "id": "d02c",
       "nombre": "Wall-E",
-      "precio": "500",
-      "imagen": "https://i.pinimg.com/564x/a0/94/46/a09446157a895a202f6aa947ae18cc50.jpg"
+      "precio": "550",
+      "imagen": "https://i.pinimg.com/564x/a0/94/46/a09446157a895a202f6aa947ae18cc50.jpg",
+      "id": "d02c"
     }
   ]
 }

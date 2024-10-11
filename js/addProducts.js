@@ -10,7 +10,7 @@ const btnClean = document.getElementById("btn-clean");
 
 btnClean.addEventListener("click", () => {
   const form_title = document.getElementById("products-add_title");
-  form_title.textContent = "AGREGAR PRODUCTOS";
+  form_title.textContent = "AGREGAR PRODUCTO";
   form.setAttribute("data-id", "");
 });
 
