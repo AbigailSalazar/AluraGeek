@@ -5,14 +5,13 @@ const message = document.querySelector(".products-add__message");
 const inputName = document.querySelector("[data-name]");
 const inputPrice = document.querySelector("[data-price]");
 const inputImg = document.querySelector("[data-img]");
+const form_title = document.getElementById("products-add_title");
 
 const form = document.getElementById("products-add-form");
 const btnClean = document.getElementById("btn-clean");
 
 btnClean.addEventListener("click", () => {
-  const form_title = document.getElementById("products-add_title");
-  form_title.textContent = "AGREGAR PRODUCTO";
-  form.setAttribute("data-id", "");
+  clean();
 });
 
 form.addEventListener("submit", async (e) => {
@@ -59,6 +58,8 @@ function clean() {
   inputName.value = "";
   inputImg.value = "";
   inputPrice.value = "";
+  form_title.textContent = "AGREGAR PRODUCTO";
+  form.setAttribute("data-id", "");
 }
 
 function mostrarMensaje(mensaje) {
