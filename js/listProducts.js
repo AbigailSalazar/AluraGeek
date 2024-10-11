@@ -41,7 +41,10 @@ export function createProductCard(product) {
 
   // Add delete event
   const deleteButton = article.querySelector(".product__delete");
-  deleteButton.addEventListener("click", () => deleteProduct(product.id, article));
+  deleteButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    deleteProduct(product.id, article);
+  });
   article.addEventListener("click", () => editProduct(product));
 }
 
