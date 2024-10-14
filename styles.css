@@ -278,6 +278,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 940px) {
+  .products__item {
+    width: 30%;
+  }
+}
+
 @media (max-width: 768px) {
   main {
     flex-flow: column-reverse;
