@@ -74,6 +74,22 @@ h2 {
   margin-bottom: 2em;
 }
 
+.products__search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+#btnsearch {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+#searchbar {
+  width: 90%;
+}
+
 .products__container {
   width: 100%;
   display: flex;
@@ -187,7 +203,8 @@ input[type="submit"] {
   color: var(--tertiary-color);
 }
 
-.button__send:hover {
+.button__send:hover,
+#btnsearch:hover {
   background-color: var(--secundary-color);
   transition: 0.2s background-color;
 }

@@ -4,23 +4,46 @@ const inputName = document.querySelector("[data-name]");
 const inputPrice = document.querySelector("[data-price]");
 const inputImg = document.querySelector("[data-img]");
 const message = document.querySelector(".products-add__message");
+const productsContainer = document.querySelector(".products__container");
 
-listProducts();
+const searchform = document.querySelector(".products__search");
+const inputSearch = document.getElementById("searchbar");
+const btnSearch = document.getElementById("btnsearch");
 
-async function listProducts() {
+// Search functionality
+searchform.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const search = inputSearch.value;
+  if (search === "") {
+    productsContainer.innerHTML = "";
+    getAllProducts();
+    return;
+  }
+  productsContainer.innerHTML = "Searching...";
+  const products = await productsAPI.searchProducts(search);
+  productsContainer.innerHTML = "";
+  listProducts(products);
+});
+
+getAllProducts();
+
+async function getAllProducts() {
   const products = await productsAPI.getProducts();
+  listProducts(products);
+}
+
+async function listProducts(products) {
   console.log(products);
   if (products.length > 0) {
     products.forEach((product) => {
       createProductCard(product);
     });
   } else {
-    productsContainer.innerHTML = "<p>No hay productos registrados</p>";
+    productsContainer.innerHTML = "<p>No se encontraron productos</p>";
   }
 }
 
 export function createProductCard(product) {
-  const productsContainer = document.querySelector(".products__container");
   const article = document.createElement("article");
   article.classList.add("products__item");
   article.id = product.id;

@@ -6,6 +6,12 @@ async function getProducts() {
   return products;
 }
 
+async function searchProducts(search) {
+  const conexion = await fetch(`${urlService}?nombre_like=${search}`);
+  const products = await conexion.json();
+  return products;
+}
+
 async function addProduct(name, price, img) {
   const conexion = await fetch(urlService, {
     method: "POST",
@@ -68,6 +74,7 @@ async function deleteProduct(id) {
 
 export const productsAPI = {
   getProducts,
+  searchProducts,
   addProduct,
   editProduct,
   deleteProduct,
