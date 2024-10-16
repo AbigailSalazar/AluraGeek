@@ -1,12 +1,11 @@
 # 👾 AluraGeek
 Este proyecto es una aplicación web para administrar productos, desarrollada como parte de la formación Front-end de Oracle ONE. La aplicación permite visualizar, agregar, editar y eliminar productos de una tienda ficticia en línea.
 
-
 ## :camera: Capturas de pantalla
-   <img src="https://github.com/user-attachments/assets/6d9b8afa-6a37-4e4a-addc-3343b054102a" alt="Captura de pantalla de la aplicación en escritorio" style="width: 52%; " />
-   <img src="https://github.com/user-attachments/assets/e451209d-c2a2-4b1e-93f7-890f7d5eae93" alt="Captura de pantalla de la aplicación en escritorio" style="width: 45%; " />
-   <img src="https://github.com/user-attachments/assets/0a92f38b-18b6-417c-914b-297eef975a76" alt="Captura de pantalla de la aplicación en movil" style="width: 45%;" />
-   <img src="https://github.com/user-attachments/assets/b194fc5a-1902-40b3-871f-8ae3fa006710" alt="Captura de pantalla de la aplicación en movil" style="width: 45%;" />
+   <img src="https://github.com/user-attachments/assets/a4dfead4-f8a1-4758-a56c-cffe0fcf13d7" alt="Captura de pantalla de la aplicación en escritorio"/>
+   <img src="https://github.com/user-attachments/assets/e1136480-d25f-473b-be00-78ab83d4bbd6" alt="Captura de pantalla de la aplicación en escritorio" />
+   <img src="https://github.com/user-attachments/assets/59609be0-d974-4bf1-a87b-f4f963c2f716" alt="Captura de pantalla de la aplicación en movil" style="width: 45%;" />
+   <img src="https://github.com/user-attachments/assets/2f209e08-a425-4d3e-9669-23092b52906d" alt="Captura de pantalla de la aplicación en movil" style="width: 45%;" />
    
 ## :rocket: Demo
 Puedes ver una versión en vivo de la aplicación en este <a href="https://alura-geek-sandy.vercel.app/" target="_blank">enlace</a>.
